@@ -1,0 +1,22 @@
+body {
+    
+    background: darkseagreen url('img/landscape.jpg') no-repeat fixed center;
+    background-size: 300px;
+    font-family: monospace;
+}
+
+p {
+    color:rgba(100, 150, 200, 0.51);
+    background-color:chartreuse;
+    padding: 50px;
+    
+}
+
+.special{
+    color:bisque;
+    background: rgb(92,92,92);
+    font-size: 150%;
+    font-family: cursive;
+    margin:30px;
+
+}
