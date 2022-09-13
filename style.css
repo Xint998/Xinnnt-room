@@ -1,4 +1,18 @@
 body {
-    background-color: lightcoral;
-    
+    margin:0;
+    background: url(img/background.png)no-repeat fixed center;
+    background-size: 2000px;    
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.title {
+    position:relative;
+    width:1550px;
+    height:100px;
+    padding:30px;
+
+
 }
