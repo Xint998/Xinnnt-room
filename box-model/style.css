@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:'belli';
+    src: url(box-model/font/BELLI.TTF);
+    
+}
+
+body{
+    margin:0;
+    background-color:blueviolet;
+    
+}
+
+.content {
+    background-color:beige;
+    color:rgb(27, 51, 51);
+    width: 200px;
+    height: 200px;
+    padding:30px;
+    border: 10px solid crimson;
+    margin: 50px auto;
+    font-family: 'belli';
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.border {
+    background-color:beige;
+    color:rgb(27, 51, 51);
+    width: 200px;
+    height: 200px;
+    padding:30px;
+    border: 10px solid crimson;
+    margin: 50px;
+    box-sizing:border-box;
+}

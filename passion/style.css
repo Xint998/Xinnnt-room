@@ -1,16 +1,47 @@
-body {
-    background: 
-    background-size: ;
-    font-family: ;
+
+.h1 {
+    font-size: 200%;
+    font-family: Copperplate, Papyrus, fantasy;
+    text-align: center;
+    Padding: 20px;
+
 }
+
+body {
+    background: url('img/passion\ color\ theme\ 1-04.png') no-repeat fixed center;
+    background-size: 3000px;
+    font-family: Garamond;
+    font-size: 130%;
+}
+
+.subtitle {
+    padding-left: 10px;
+
+} 
+.p {
+    margin: 30px;
+    color: rgb(87, 84, 84);
+    line-height: 130%;
+    text-indent: 2em;
+}
+
+
+
+
+.Instagram {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 70%;
+    padding-left: 10px;
+}
+
+
+@font-face {
+    font-family:'belli';
+    src: url(passion/font/BELLI.TTF);
     
-p {
-    color: rgba(46, 47, 47, 0.8);
-    background-color:antiquewhite;
-    padding: 80px;
+}
 
-}  
-
-.special{
-    color:
+.artist {
+    font-family:'belli';
+    padding-left: 30px;
 }

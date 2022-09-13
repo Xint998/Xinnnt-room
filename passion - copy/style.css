@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    background: url(img/background.png) no-repeat fixed center;
+    background-size: 2000px;
+    
+
+}
+
+.h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 276px;
+
+}
+
+.p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box{
+    background:transparent;
+    width:1490px;
+    height:fit-content;
+    border: 0.5px rebeccapurple;
+    column-count: 2;
+    margin: 15px;
+    padding-top:50px;
+    padding-bottom: 80px;
+    right: 30px;
+    
+
+
+}
+.box2{
+    background-color: rgba(255, 182, 193, 0.204);
+    position:sticky;
+    
+}
+
+.box3{
+    position: absolute;
+    right:50px;
+    top:300px;
+    border:2px rgba(255, 182, 193, 0.204);
+
+}
+
+.box4 {
+    position:relative;
+    background-color: transparent;
+    margin:30px;
+    
+    
+}
+
+.artist{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 130%;
+    font-style: italic;
+    color:blueviolet;
+
+}
+.subtitle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%;
+    margin:30px;
+    padding-top: 70px;
+}
+
+.instagram {
+    padding-left:20px;
+    font-size:80%;
+    
+}
+
+img{
+    margin:30px;
+}
+
+.footer{
+    position:fixed;
+    background-color: rgba(255, 255, 255, 0.718);
+    bottom:8px;
+    width:1550px;
+    height:30px;
+}

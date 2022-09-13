@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:20px;
+}
+
+.box {
+    background: lightblue;
+    width:200px;
+    height:200px;
+    border:1px rgb(140, 129, 150) solid ;
+    margin-top:10px;
+    
+
+}
+.relative {
+    position: relative;
+    background: lightgreen;
+    bottom:100px;
+    right:-100px;
+
+}
+
+.fixed {
+    position: fixed;
+    background:transparent;
+    bottom:20px;
+    right:20px;
+}
+
+.absolute {
+    position:absolute;
+    background:rgba(32, 178, 171, 0.444);
+    top:20px;
+    right: 20px;
+    width:60px;
+    height:50px;
+
+}
+
+.sticky {
+    position:sticky;
+    background:lightgoldenrodyellow;
+    top:0;
+
+}
