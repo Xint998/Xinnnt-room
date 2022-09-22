@@ -7,6 +7,7 @@
 }
 
 
+
 body {
     margin:0;
     padding:0;
@@ -17,7 +18,7 @@ body {
 }
 
 .bigbox {
-    position:;
+    
     margin-top: 95px;
     margin-left: 180px;
 
@@ -79,9 +80,7 @@ body {
 }
 
 
-.leftbox {
-    
-}
+
 
 
 img:hover{
