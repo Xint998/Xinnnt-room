@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    margin:0;
+    padding:0;
+    background: url(img/background.png) no-repeat fixed center ; 
+    background-size:1450px;
+    background-color:rgb(249, 206, 212);
+    cursor: url(img/meme/twitter-card.cur), default;
+}
+
+.bigbox {
+    position:;
+    margin-top: 95px;
+    margin-left: 180px;
+
+}
+.firstrow {
+    height:130px;
+    width:1150px;
+    background-color: transparent;
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:80px;
+    padding:5px;
+    position: sticky;
+    
+}
+
+.secondrow {
+
+    height:130px;
+    width:1150px;
+    background-color: transparent;
+    margin-top: 53px;
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:80px;
+    padding:5px;
+    position: sticky;
+    
+}
+
+.thirdrow {
+
+    height:130px;
+    width:1150px;
+    background-color: transparent;
+    margin-top: 53px;
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:80px;
+    padding:5px;
+    position: sticky;
+    
+
+}
+
+
+.box {
+    background:rgba(249, 206, 212, 0.712);
+    height: 120px;
+    width:120px;
+    
+    
+}
+
+
+.leftbox {
+    
+}
+
+
+img:hover{
+    animation:tada 1s .2s ease both;
+    -moz-animation: tada 1s .2s ease both;
+
+}
+
+@keyframes tada{
+0%{-webkit-transform:scale(1);}
+
+10%, 20%{-webkit-transform:scale(0.9) rotate(-3deg);}
+
+30%, 50%, 70%, 90%{-webkit-transform:scale(1.1) rotate(3deg);}
+
+40%, 60%, 80%{-webkit-transform:scale(1.1) rotate(-3deg);}
+
+100%{-webkit-transform:scale(1) rotate(0);}
+}
