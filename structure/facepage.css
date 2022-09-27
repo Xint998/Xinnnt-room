@@ -1,3 +1,7 @@
+
+::-webkit-scrollbar {
+    display: none;
+}
 body {
     background-color:rgb(249, 206, 212);
     
@@ -8,3 +12,31 @@ img:hover {
     
     content: url(img/meme/twitter-card2.png);
 }
+
+.dialoguebox {
+    height:250px;
+    width:450px;
+    right:200px;
+    top: 100px;
+    background-color:rgb(230, 192, 197);
+    display: flex;
+    position:fixed;
+    padding:10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 400%;
+    color: rgb(152, 109, 139);
+    text-align: center;
+    
+
+}
+
+.dialoguebox:hover {
+     
+    content: text(HAVE FUN!);
+}
+
+.text {
+    
+}
+
+
