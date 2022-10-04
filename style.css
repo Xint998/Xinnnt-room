@@ -6,13 +6,38 @@ body {
 
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+
+
 }
 
-.title {
-    position:relative;
-    width:1550px;
-    height:100px;
-    padding:30px;
 
 
+
+
+
+.flex {
+    display:flex;
+    width:100vw;
+    height:100vh;
+    flex-direction: row;
+    align-content:center;
+    justify-content: space-around;
+
+
+}
+
+.nav {
+    width: 17vw;
+    height:100vh;
+    background-color:rgba(255, 255, 255, 0.89);
+    position:fixed;
+    left:0;
+}
+
+.content {
+    width: 83vw;
+    height:100vh;
+    background-color:rgb(225, 207, 207);
+    left:300px;
 }
