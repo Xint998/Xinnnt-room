@@ -1,3 +1,11 @@
+@font-face {
+    font-family:alex brush;
+    src: url('https://fonts.googleapis.com/css?family=Alex Brush');
+  }
+  
+
+
+
 body {
     margin:0;
     background: url(img/background.png) no-repeat fixed center;
@@ -5,7 +13,7 @@ body {
 }
 
 h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: alex brush;
     font-size: 32px;
 
 
@@ -28,16 +36,24 @@ h1 {
 }
 
 .nav {
-    width: 17vw;
+    width: 15vw;
     height:100vh;
     background-color:rgba(255, 255, 255, 0.89);
     position:fixed;
     left:0;
+    padding:10px;
+    padding-top:50px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;                                                                    ;
+    
 }
 
 .content {
-    width: 83vw;
+    width: 85vw;
     height:100vh;
     background-color:rgb(225, 207, 207);
-    left:300px;
+    position:absolute;
+    left:15vw;
+    padding:30px;
+    padding-top:20px;
 }
