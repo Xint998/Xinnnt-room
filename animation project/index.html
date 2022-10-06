@@ -4,24 +4,32 @@
     <title>Screensaver</title>
     <link rel="stylesheet" href="style.css">
     
+    
 </head>
 <body>
+    
     <!-- <div class="heijiao"><img src=img/heijiao.png></div> -->
     <div class="flex">
         <div class=squarelayer>
             <div class="square">
                 <div class="screen">
-                    <div class=marquee-content>88rising, Rich Brian & NIKI – California</div>
+                    <div class=marquee-content>Rich Brian, NIKI, Warren Hue & Jackson Wang – California</div>
                 </div>
                 <div class="bigsquare">
+
+                    <audio id="player">
+                        <source src="img/california.mp3"></source>
+                    </audio>
+                    </div>
+                
                     <div class="circle1">
                         <div class="circle4">
                             <div class="circle5"></div>
                         </div>
                     </div>
                     <div class="buttomkey">
-                        <div class="buttomkey1"></div>
-                        <div class="buttomkey2"></div>
+                        <span style="cursor: pointer;" id="start"><div class="buttomkey1">▶</div></span>
+                        <span style="cursor: pointer;" id="stop"><div class="buttomkey2">||</div></span>
                         <div class="buttomkey3"></div>
                         <div class="buttomkey4"></div>
                     </div>
@@ -44,4 +52,14 @@
     
     
 </body>
+<script type="text/javascript">
+    document.getElementById('start').onclick = function(){
+        player.play();
+    }
+    document.getElementById('stop').onclick = function(){
+        player.pause();
+
+    }
+    
+</script>
 </html>

@@ -13,6 +13,10 @@ body {
     
 }
 
+
+
+
+
 .flex {
     display:flex;
     width:100vw;
@@ -29,7 +33,7 @@ body {
     border-top-right-radius: 60px;
     align-items:center;
     justify-content: center;
-    animation: shake 1.2s infinite;
+    animation: shake 1.3s infinite;
     border-color:gray 15px;
     position: fixed;
     left:320px;
@@ -117,8 +121,10 @@ body {
     bottom:70px;
     display:flex;
     flex-direction:column;
+    
 
 }
+
 
 .buttomkey1 {
     height:40px;
@@ -126,6 +132,13 @@ body {
     background-color:rgba(119, 205, 255, 0.496);
     position:relative;
     margin:15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:26px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.601);
+    padding:5px;
+    padding-left:40px;
+    justify-content: center;
     
 }
 
@@ -135,6 +148,15 @@ body {
     background-color:rgba(137, 119, 255, 0.496);
     position:relative;
     margin:15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.601);
+    padding:5px;
+    padding-left:40px;
+    justify-content: center;
+    font-weight:100px;
+    
     
 }
 
@@ -203,7 +225,7 @@ body {
     z-index: 1;
     position: fixed;
     right:-350px;
-    
+    bottom:4px;
     filter: opacity(60%)
 }
 
