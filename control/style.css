@@ -1,0 +1,222 @@
+*{
+    box-sizing:border-box;
+}
+
+body {
+    margin:10px;
+
+    background-color: azure;
+    transition: background-color .5s;
+}
+
+.box.orginial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonposition {
+    position: fixed;
+    bottom: 40px;
+    left:20px;
+}
+
+.buttonpositionc {
+    position: fixed;
+    top: 40px;
+    left:20px;
+}
+
+.buttonpositionj {
+    position: fixed;
+    top: 350px;
+    left:20px;
+}
+
+.box {
+    height:200px;
+    width:200px;
+    font-family: sans-serif;
+    font-size: 300px;
+    position:fixed;
+    right:200px;
+    bottom: 150px;
+}
+
+
+.box.dark {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:red;
+}
+.box.glow {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:red;
+}
+
+.box.spin {
+    font-family:Brush Script MT;
+    color:red;
+}
+
+.box.hw {
+    font-family: signature;
+    color:red;
+}
+
+
+
+.boxx {
+    height:200px;
+    width:800px;
+    font-family: fangsong;
+    font-size: 150px;
+    position:fixed;
+    right:-400px;
+    top:10px;
+}
+
+.boxx.fangsong {
+    font-family: fangsong;
+    color:rgb(253, 199, 221);
+}
+
+.boxx.kaiti {
+    font-family: kaiti;
+    color:rgb(254, 167, 202);
+}
+
+.boxx.lishu {
+    font-family: lishu;
+    color:rgb(251, 102, 161);
+}
+
+.boxx.xingkai {
+    font-family: xingkai;
+    color:rgb(200, 107, 144);
+}
+
+.boxx.shoushu {
+    font-family: shoushu;
+    color:rgb(193, 54, 110);
+}
+
+.boxxx {
+    height:200px;
+    width:800px;
+    font-family: genjiro;
+    font-size: 200px;
+    position:fixed;
+    right:-250px;
+    top:270px;
+    
+    
+}
+
+.boxxx.genjiro {
+    font-family: genjiro;
+    color:rgb(168, 108, 108);
+}
+
+.boxxx.hakio {
+    font-family: hakio;
+    color:rgba(168, 108, 108, 0.682);
+}
+
+.boxxx.karasha {
+    font-family: karasha;
+    color:rgba(168, 108, 108, 0.368);
+}
+
+.boxxx.kobajeon {
+    font-family: kobajeon;
+    color:rgba(168, 108, 108, 0.164);
+}
+
+
+
+
+
+
+.flex {
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:100px;
+
+}
+
+.active {
+    right:0;
+    
+}
+
+@font-face {
+    font-family: signature;
+    src: url(font/AccountantSignature-RpXr6.ttf);
+  }
+
+  @font-face {
+    font-family: fangsong;
+    src: url(font/STFANGSO.TTF);
+  }
+
+  @font-face {
+    font-family: kaiti;
+    src: url(font/STKAITI.TTF);
+  }
+
+  @font-face {
+    font-family: lishu;
+    src: url(font/STLITI.TTF);
+  }
+
+  @font-face {
+    font-family: xingkai;
+    src: url(font/STXINGKA.TTF);
+  }
+
+  @font-face {
+    font-family: shoushu;
+    src: url(font/FZZJ-LCSSJW.TTF);
+  }
+  
+
+  @font-face {
+    font-family:genjiro ;
+    src: url(font/Genjiro-JRymx.otf);
+  }
+
+  @font-face {
+    font-family: hakio;
+    src: url(font/HakioFreeTrial-eZ5p3.otf);
+  }
+
+  @font-face {
+    font-family: karasha;
+    src: url(font/Karasha-z8mYw.otf);
+  }
+
+  @font-face {
+    font-family: kobajeon;
+    src: url(font/Kobajeon-w18YP.otf);
+  }
+
+button {
+    padding:10px;
+    border:3px solid;
+    background-color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover {
+    background-color:rgb(236, 236, 236);
+}
+
+button:active {
+    background-color:red;
+}
+
+
+
+.draggable {
+    cursor:grab;
+}
+
