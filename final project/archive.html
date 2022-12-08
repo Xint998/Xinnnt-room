@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>archive</title>
+<title>contact</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: archive;
-		--web-view-id: archive;
+		--web-view-name: contact;
+		--web-view-id: contact;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: archive;
+		--web-view-ids: contact;
 	}
 	* {
 		margin: 0;
@@ -23,27 +23,16 @@
 	}
 	#archive {
 		position: absolute;
-		width: 1519px;
-		height: 768px;
+		width: 100vw;
+		height: 100vh;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: archive;
+		--web-view-name: contact;
 		--web-view-id: archive;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
-	@keyframes  {
-	
-	
-	}
-	@keyframes  {
-	
-	
-	}
-	@keyframes  {
-	
-	
-	}
+
 	#n_1 {
 		position: absolute;
 		width: 964.333px;
@@ -53,39 +42,82 @@
 		overflow: visible;
 	}
 	#n_2 {
-		position: absolute;
-		width: 1519px;
-		height: 768px;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
 		left: 0px;
 		top: 0px;
 		overflow: visible;
 	}
-	#n_2_m {
-		fill: transparent;
+
+	#me {
+		position:fixed;
+		top:17vh;
+		left:opx;
+		height:70vh;
+		width:auto;
 	}
-	.n_2_m {
-		position: absolute;
-		overflow: visible;
-		width: 154px;
-		height: 50px;
-		left: 1080px;
-		top: 718px;
+
+	#nametitle {
+		position:fixed;
+		left:30px;
+		top:20px;
+		
 	}
-	#n_3 {
-		fill: transparent;
+	
+
+	#contactme {
+		position:absolute;
+		font-size:90px;
+		left:220px;
+		font-family:PlayfairDisplay-Regular;
+		top:30px;
+		letter-spacing: 4px;
+		color:rgb(45, 45, 45);
+
 	}
-	.n_3 {
-		position: absolute;
-		overflow: visible;
-		width: 154px;
-		height: 50px;
-		left: 1233px;
-		top: 718px;
+
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
 	}
+
+	.flex {
+		display:flex;
+		position:fixed;
+		width:1000px;
+		height:1000px;
+		z-index:99;
+		top:130px;
+		left:520px;
+	}
+
+	.contactmm {
+		
+		position:absolute;
+		width:40vw;
+		left:190px;
+		height:200px;
+		z-index:99;
+		top:250px;
+		
+		text-align: center;
+		font-family:Garamond;
+		font-size: 20px;
+		
+	}
+
+	@font-face {
+		font-family:Garamond;
+		src:url(font/CormorantGaramond-Light.ttf);
+	}
+	
+	
+
 	#Portfolio {
-		left: 1033.601px;
+		right:600px;
 		top: 29px;
-		position: absolute;
+		position: fixed;
 		overflow: visible;
 		width: 66.128px;
 		height: 28.681869506835938px;
@@ -99,13 +131,13 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
+		font-size: 16px;
 		color: rgba(3,0,0,1);
 	}
 	#Collection {
-		left: 1204.326px;
+		right:400px;
 		top: 29px;
-		position: absolute;
+		position: fixed;
 		overflow: visible;
 		width: 77.128px;
 		height: 28.681869506835938px;
@@ -119,13 +151,13 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
+		font-size: 16px;
 		color: rgba(3,0,0,1);
 	}
 	#Main_Page {
-		left: 833.568px;
+		right:790px;
 		top: 29px;
-		position: absolute;
+		position: fixed;
 		overflow: visible;
 		width: 94.128px;
 		height: 28.681869506835938px;
@@ -139,13 +171,13 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
+		font-size: 16px;
 		color: rgba(3,0,0,1);
 	}
 	#Archive_r {
-		left: 1392px;
+		right:200px;
 		top: 29px;
-		position: absolute;
+		position: fixed;
 		overflow: visible;
 		width: 72.509px;
 		height: 28.681869506835938px;
@@ -155,9 +187,28 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
-		color: rgba(3,0,0,1);
+		font-size: 16px;
+		color: rgb(128, 128, 128);
+		text-decoration-line:underline;
+		text-underline-offset: 7px;
 	}
+	a:visited {
+		color:rgb(0, 0, 0); 
+		text-decoration:none;
+	}
+
+	a:active {
+	color:rgb(0, 0, 0); 
+	text-decoration:none;
+	}
+
+	a:hover {
+	color:rgb(118, 116, 116);
+	text-decoration-line:underline;
+	
+	}
+
+
 </style>
 <script id="applicationScript">
 ///////////////////////////////////////
@@ -3076,14 +3127,41 @@ window.application = new Application();
 		
 	<img id="n_2" src="n_2.png" srcset="n_2.png 1x, n_2@2x.png 2x">
 		
-	<svg class="n_2_m">
-		<rect id="n_2_m" rx="0" ry="0" x="0" y="0" width="154" height="50">
-		</rect>
-	</svg>
-	<svg class="n_3">
-		<rect id="n_3" rx="0" ry="0" x="0" y="0" width="154" height="50">
-		</rect>
-	</svg>
+
+	<div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+
+
+	<img id="me" src="IMG_2130.JPG">
+
+	<div class="flex">
+		<div id="contactme">CONTACT &nbsp;ME</div>
+		
+		<div class="contactmm">
+			<p>Instagram</p>
+			
+			<div style="margin-top:7px;"><a href="https://www.instagram.com/xint998/" style="text-decoration:none; ">Personal&nbsp;</a> &nbsp; <a style="text-decoration:none;">&nbsp;|</a> &nbsp;<a href="https://www.instagram.com/xinnnt_/" style="text-decoration:none;">&nbsp;&nbsp;Art &nbsp; &nbsp;</a>
+			
+			</div>
+			<p> &nbsp; </p>
+			<p> &nbsp; </p>
+			<p>Email<p>
+			<p>xin315998@gmail.com</p>
+			<p> &nbsp; </p>
+			<p> &nbsp; </p>
+			
+			<p>Phone</p>
+			<p>+1 804 655 1812</p>
+			<p> &nbsp; </p>
+			<p> &nbsp; </p>
+
+			<p>Wechat</p>
+			<p>_tsuki_xT</p>
+	
+</div>
+
+
+
+</div>
 	<div onclick="application.goToTargetView(event)" id="Portfolio">
 		<span>Portfolio</span>
 	</div>
@@ -3094,7 +3172,7 @@ window.application = new Application();
 		<span>Main Page</span>
 	</div>
 	<div id="Archive_r">
-		<span>Archive</span>
+		<span>Contact</span>
 	</div>
 </div>
 </body>

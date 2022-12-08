@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Main page</title>
-<style id="applicationStylesheet" type="text/css">
+
+<style id="applicationStylesheet" type="text/css" >
 	.mediaViewInfo {
 		--web-view-name: Main page;
 		--web-view-id: Main_page;
@@ -20,17 +21,19 @@
 		padding: 0;
 		box-sizing: border-box;
 		border: none;
+		
 	}
 	#Main_page {
 		position: absolute;
-		width: 1519px;
-		height: 768px;
+		width: 100vw;
+		height: 100vh;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
 		--web-view-name: Main page;
 		--web-view-id: Main_page;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
+		background-color: rgb(246,249,242);
 	}
 	@keyframes fadein {
 	
@@ -44,16 +47,62 @@
 	}
 	#n_2 {
 		position: absolute;
-		width: 1519px;
-		height: 768px;
+		width: 100vw;
+		height: 100vh;
 		left: 0px;
 		top: 0px;
-		overflow: visible;
+		overflow: hidden;
+		
 	}
-	#Portfolio {
-		left: 1033.601px;
-		top: 29px;
+
+	#个人简介 {
 		position: absolute;
+		width:32vw;
+		height:auto;
+		top:420px;
+		left:160px;
+		font-family: 'Courier New', Courier, monospace;
+		font-size:17px;
+		z-index:99;
+	}
+	
+
+	#个人简介2 {
+		position: absolute;
+		width:32vw;
+		height:auto;
+		top:670px;
+		left:160px;
+		font-family: jianjie2;
+		font-size:18px;
+		color:rgb(61, 60, 60);
+		z-index:99;
+	}
+
+	.m1 {
+			position:absolute;
+			z-index:2;
+			height:100vh;
+			width:100vw;
+			left: 0px;
+			bottom:15px;
+			overflow: hidden;
+
+	}
+	#img1 {
+		height:auto;
+		width:100vw;
+	}
+
+	@font-face {
+		font-family:jianjie2;
+		src:url(font/ShengHuoHenKuDanNiHenTian-2.ttf);
+	}
+
+	#Portfolio {
+		right:600px;
+		top: 29px;
+		position: fixed;
 		overflow: visible;
 		width: 66.128px;
 		height: 28.681869506835938px;
@@ -67,13 +116,13 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
+		font-size: 16px;
 		color: rgba(3,0,0,1);
 	}
 	#Collection {
-		left: 1204.326px;
+		right:400px;
 		top: 29px;
-		position: absolute;
+		position: fixed;
 		overflow: visible;
 		width: 77.128px;
 		height: 28.681869506835938px;
@@ -87,31 +136,16 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
+		font-size: 16px;
 		color: rgba(3,0,0,1);
 	}
-	#n_2_n {
-		fill: transparent;
+	#nametitle {
+		position:fixed;
+		left:30px;
+		top:20px;
+		
 	}
-	.n_2_n {
-		position: absolute;
-		overflow: visible;
-		width: 154px;
-		height: 50px;
-		left: 925.92px;
-		top: 718px;
-	}
-	#n_3 {
-		fill: transparent;
-	}
-	.n_3 {
-		position: absolute;
-		overflow: visible;
-		width: 154px;
-		height: 50px;
-		left: 1233px;
-		top: 718px;
-	}
+	
 	#n_5 {
 		position: absolute;
 		width: 0px;
@@ -121,29 +155,35 @@
 		overflow: visible;
 	}
 	#Main_Page {
-		left: 833.568px;
+		right: 790px;
 		top: 29px;
-		position: absolute;
+		position: fixed;
 		overflow: visible;
 		width: 94.128px;
 		height: 28.681869506835938px;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Main_page.html;
+		cursor: pointer;
 		line-height: 999.9998168945312px;
 		margin-top: -492.9999084472656px;
 		text-align: center;
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
-		color: rgba(3,0,0,1);
+		font-size: 16px;
+		text-decoration-line:underline;
+		text-underline-offset: 7px;
+		color: rgb(128, 128, 128);
 	}
 	#Archive {
-		left: 1392px;
+		right: 200px;
 		top: 29px;
-		position: absolute;
+		position: fixed;
 		overflow: visible;
 		width: 72.509px;
 		height: 28.681869506835938px;
-		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
 		--web-action-target: archive.html;
 		cursor: pointer;
@@ -153,7 +193,7 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
+		font-size: 16px;
 		color: rgba(3,0,0,1);
 	}
 </style>
@@ -3070,7 +3110,21 @@ window.application = new Application();
 </head>
 <body>
 <div id="Main_page">
-	<img id="n_2" src="n_2.png" srcset="n_2.png 1x, n_2@2x.png 2x">
+	<div class="m1"><img id=img1 src="main/main page.png" style="height:100vh width=100vw">
+	
+	<div id="个人简介">
+		<p>  &nbsp;  &nbsp; Hello! I am Xintong Wu from Fujian, China and currently located in Richmond, VA. </p>
+		<p>	 &nbsp;  &nbsp; A Pisces girl born in 2000. I am a Chinese traditional culture explorer. Love anything related to art. In my free time, I like to study Chinese cuisine, drawing or painting and play video games with my friends.</p>
+		<p>	 &nbsp;  &nbsp; I am currently a senior graphic design major student at Virginia Commonwealth University.</p>
+	</div>
+
+	<div id="个人简介2">
+		<p>  &nbsp;  &nbsp; 你好呀！我是吴炘彤来自中国福建福州，现居住美国维吉尼亚州的里士满。</p>
+		<p>	 &nbsp;  &nbsp; 一个出生于千禧年的双鱼座女生。同时也是中国传统文化爱好者。喜欢与艺术相关的一切事物。 在闲暇之时我喜欢研究中国美食和各种颜料绘画。我也是一个喜欢和朋友一起玩游戏的资深网瘾少女。</p>
+		<p>	 &nbsp;  &nbsp; 我现在是一名就读于维吉尼亚联邦大学的大四平面设计专业学生。</p>
+	</div>
+
+	
 		
 	<div onclick="application.goToTargetView(event)" id="Portfolio">
 		<span>Portfolio</span>
@@ -3078,21 +3132,17 @@ window.application = new Application();
 	<div onclick="application.goToTargetView(event)" id="Collection">
 		<span>Collection</span>
 	</div>
-	<svg class="n_2_n">
-		<rect id="n_2_n" rx="0" ry="0" x="0" y="0" width="154" height="50">
-		</rect>
-	</svg>
-	<svg class="n_3">
-		<rect id="n_3" rx="0" ry="0" x="0" y="0" width="154" height="50">
-		</rect>
-	</svg>
+	<div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+
 	<img id="n_5" src="n_5.png" srcset="n_5.png 1x, n_5@2x.png 2x">
 		
 	<div id="Main_Page">
 		<span>Main Page</span>
 	</div>
 	<div onclick="application.goToTargetView(event)" id="Archive">
-		<span>Archive</span>
+		<span>Contact</span>
+	</div>
+
 	</div>
 </div>
 </body>
