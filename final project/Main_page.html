@@ -24,71 +24,22 @@
 		
 	}
 	#Main_page {
+		
 		position: absolute;
 		width: 100vw;
 		height: 100vh;
-		background-color: rgba(255,255,255,1);
+		background-image: url(未标题-1.jpg);
 		overflow: hidden;
 		--web-view-name: Main page;
 		--web-view-id: Main_page;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
-		background-color: rgb(246,249,242);
-	}
-	@keyframes fadein {
-	
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	
-	}
-	#n_2 {
-		position: absolute;
-		width: 100vw;
-		height: 100vh;
-		left: 0px;
-		top: 0px;
-		overflow: hidden;
 		
 	}
-
-	#个人简介 {
-		position: absolute;
-		width:32vw;
-		height:auto;
-		top:420px;
-		left:160px;
-		font-family: 'Courier New', Courier, monospace;
-		font-size:17px;
-		z-index:99;
-	}
+	
 	
 
-	#个人简介2 {
-		position: absolute;
-		width:32vw;
-		height:auto;
-		top:670px;
-		left:160px;
-		font-family: jianjie2;
-		font-size:18px;
-		color:rgb(61, 60, 60);
-		z-index:99;
-	}
-
-	.m1 {
-			position:absolute;
-			z-index:2;
-			height:100vh;
-			width:100vw;
-			left: 0px;
-			bottom:15px;
-			overflow: hidden;
-
-	}
+	
 	#img1 {
 		height:auto;
 		width:100vw;
@@ -116,7 +67,7 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 18px;
 		color: rgba(3,0,0,1);
 	}
 	#Collection {
@@ -136,7 +87,7 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 18px;
 		color: rgba(3,0,0,1);
 	}
 	#nametitle {
@@ -171,7 +122,7 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 18px;
 		text-decoration-line:underline;
 		text-underline-offset: 7px;
 		color: rgb(128, 128, 128);
@@ -193,9 +144,152 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 18px;
 		color: rgba(3,0,0,1);
 	}
+
+	.bigbox {
+		align-content: center;
+		width:90vw;
+		height:87vh;
+		
+		border: 3px gray solid;
+		display:flex;
+		overflow:hidden;
+		top:8vh;
+		left:5vw;
+		position:absolute;
+		
+	}
+
+	
+
+	.bigboxleft{
+		position:absolute;
+		
+		top:-3px;
+		left:-3px;
+		height:87vh;
+		width:37vw;
+	}
+
+	.up {
+		display:flex;
+		flex-direction:row;
+		position:absolute;
+		overflow: hidden;
+		height:13vh;
+		border: 3px gray solid;
+		top:-3px;
+		left:-3px;
+
+	}
+
+
+	.upleft {
+	
+		border: 3px gray solid;
+		font-family:krungthep;
+		left:-3px;
+		width:18.5vw;
+		height:12.7vh;
+		
+		border-bottom: transparent solid;
+		border-top: transparent solid;
+		font-size: 1.8vw;
+		color: rgb(107, 107, 107);
+		text-align: center;
+		padding:2vh;
+		
+	}	
+
+
+	@font-face {
+		font-family:krungthep;
+		src:url(font/Krungthep.ttf)
+	}
+
+
+	.upright {
+		right:-3px;
+		top:-3px;
+		width:18.5vw;
+		font-family:krungthep;
+		color: rgb(107, 107, 107);
+		text-align: center;
+		margin:auto;
+		font-size: 3.5vw;
+	}
+	
+
+
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
+	}
+
+	.bottom	{
+		position:absolute;
+		bottom:-3px;
+		height:74vh;
+		width:37vw;
+		
+		
+
+
+	}
+
+	#个人简介 {
+		position: absolute;
+		width:27vw;
+		height:auto;
+		top:10vh;
+		left:5vw;
+		font-family: 'Courier New', Courier, monospace;
+		font-size:0.95vw;
+		z-index:99;
+	}
+	
+
+	#个人简介2 {
+		position: absolute;
+		width:27vw;
+		height:auto;
+		top:40vh;
+		left:5vw;
+		font-family: jianjie2;
+		font-size:1vw;
+		color:rgb(61, 60, 60);
+		z-index:99;
+	}
+
+	.imgme {
+		width:53vw;
+		height:87vh;
+		position:absolute;
+		border: 3px gray solid;
+		right:-3px;
+		bottom:-3px;
+		padding:auto;
+		text-align: center;
+	}
+
+	#me {
+		width:44vw;
+		height:auto;
+		position:relative;
+		margin: 1vh;
+		
+	}
+	
+	.welcome {
+		font-family: PlayfairDisplay-Regular;
+		font-size: 9vw;
+		letter-spacing: 0.3vw;
+		color: rgb(58, 58, 58);
+		
+	}
+
 </style>
 <script id="applicationScript">
 ///////////////////////////////////////
@@ -3110,20 +3204,36 @@ window.application = new Application();
 </head>
 <body>
 <div id="Main_page">
-	<div class="m1"><img id=img1 src="main/main page.png" style="height:100vh width=100vw">
+	<div class="bigbox">
+		<div class="bigboxleft">
+			<div class="up">
+				<div class="upleft"><p>GRAPHIC</p> 
+					DESIGN</div>
+				<div class="upright">VCUARTS</div>
+				
+			</div>
+			<div class="bottom">
+				<div id="个人简介">
+					<p>  &nbsp;  &nbsp; Hello! I am Xintong Wu from Fujian, China and currently located in Richmond, VA. </p>
+					<p>	 &nbsp;  &nbsp; A Pisces girl born in 2000. I am a Chinese traditional culture explorer. Love anything related to art. In my free time, I like to study Chinese cuisine, drawing or painting and play video games with my friends.</p>
+					<p>	 &nbsp;  &nbsp; I am currently a senior graphic design major student at Virginia Commonwealth University.</p>
+				</div>
+			
+				<div id="个人简介2">
+					<p>  &nbsp;  &nbsp; 你好呀！我是吴炘彤来自中国福建福州，现居住美国维吉尼亚州的里士满。</p>
+					<p>	 &nbsp;  &nbsp; 一个出生于千禧年的双鱼座女生。同时也是中国传统文化爱好者。喜欢与艺术相关的一切事物。 在闲暇之时我喜欢研究中国美食和各种颜料绘画。我也是一个喜欢和朋友一起玩游戏的资深网瘾少女。</p>
+					<p>	 &nbsp;  &nbsp; 我现在是一名就读于维吉尼亚联邦大学的大四平面设计专业学生。</p>
+				</div>
+			</div>
+		</div>
+		
+			<div class="imgme">
+				<div class="welcome">WELCOME</div>
+				<img id=me src="me.png">
+			</div>
+		
+	</div>
 	
-	<div id="个人简介">
-		<p>  &nbsp;  &nbsp; Hello! I am Xintong Wu from Fujian, China and currently located in Richmond, VA. </p>
-		<p>	 &nbsp;  &nbsp; A Pisces girl born in 2000. I am a Chinese traditional culture explorer. Love anything related to art. In my free time, I like to study Chinese cuisine, drawing or painting and play video games with my friends.</p>
-		<p>	 &nbsp;  &nbsp; I am currently a senior graphic design major student at Virginia Commonwealth University.</p>
-	</div>
-
-	<div id="个人简介2">
-		<p>  &nbsp;  &nbsp; 你好呀！我是吴炘彤来自中国福建福州，现居住美国维吉尼亚州的里士满。</p>
-		<p>	 &nbsp;  &nbsp; 一个出生于千禧年的双鱼座女生。同时也是中国传统文化爱好者。喜欢与艺术相关的一切事物。 在闲暇之时我喜欢研究中国美食和各种颜料绘画。我也是一个喜欢和朋友一起玩游戏的资深网瘾少女。</p>
-		<p>	 &nbsp;  &nbsp; 我现在是一名就读于维吉尼亚联邦大学的大四平面设计专业学生。</p>
-	</div>
-
 	
 		
 	<div onclick="application.goToTargetView(event)" id="Portfolio">

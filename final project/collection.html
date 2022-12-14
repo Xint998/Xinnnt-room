@@ -34,21 +34,14 @@
 		--web-enable-deep-linking: true;
 	}
 	
-	#n_1 {
-		position: absolute;
-		width: 964.333px;
-		height: 542.438px;
-		left: 0px;
-		top: 0px;
-		overflow: hidden;
-	}
+	
 	#n_6 {
 		position: absolute;
 		width: 100vw;
 		height: 100vh;
 		left: 0px;
 		top: 0px;
-		overflow: visible;
+		overflow: hidden;
 	}
 	
 	#nametitle {
@@ -75,7 +68,7 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 18px;
 		color: rgba(3,0,0,1);
 	}
 	#Collection_p {
@@ -91,7 +84,7 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 18px;
 		color: rgb(128, 128, 128);
 		text-decoration-line:underline;
 		text-underline-offset: 7px;
@@ -113,7 +106,7 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 18px;
 		color: rgba(3,0,0,1);
 	}
 	#Archive {
@@ -133,10 +126,47 @@
 		font-family: ArtifaktElement-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 18px;
 		color: rgba(3,0,0,1);
 	}
 
+
+	nav {
+        width: 90vw;
+        height: 600px;
+		top:1300px;
+		left:80px;
+		display:flex;
+		flex-direction: row;
+		position:absolute;
+		overflow:hidden;
+	}
+
+	ul {
+     width: 100vw;
+     height: 100%;
+     animation: picmove 15s linear infinite alternate ;
+	 display:flex;
+	flex-direction: row;
+    }
+
+	@keyframes picmove {
+        from {
+             transform: translate(200px);
+           }
+           to {
+            transform: translate(-1700px);
+        }
+    }
+
+	ul:hover {
+            animation-play-state: paused;
+			
+    }
+
+	li {
+		list-style:none;
+	}
 	
 </style>
 <script id="applicationScript">
@@ -3054,7 +3084,7 @@ window.application = new Application();
 <div id="collection">
 	<img id="n_1" src="n_1.png" srcset="n_1.png 1x, n_1@2x.png 2x">
 		
-	<img id="n_6" src="n_6.png" srcset="n_6.png 1x, n_6@2x.png 2x">
+	<img id="n_6" src="未标题-1.jpg" >
 
 
 		
