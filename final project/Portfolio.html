@@ -32,18 +32,13 @@
 		--web-view-id: Portfolio;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
+		scroll-snap-type: y mandatory;
+    	-webkit-overflow-scrolling: touch;
 
 	}
 
 	
-	#n_2 {
-		position: fixed;
-		width: 100vw;
-		height: 5000px;
-		left: 0px;
-		top: 0px;
-		overflow: hidden;
-	}
+	
 	#PORT_FO_LIO_FO_LIO {
 		position: absolute;
 		width: 696px;
@@ -95,9 +90,9 @@
 	
 	#zine_mock_up3 {
 		position: absolute;
-		width: 374px;
-		height: 374px;
-		left: 150px;
+		width: 400px;
+		height: 400px;
+		left: 170px;
 		top: 1277px;
 		overflow: hidden;
 		--web-animation: fadein undefineds undefined;
@@ -107,8 +102,8 @@
 	}
 	#design_practice_collection_boo {
 		position: absolute;
-		width: 374px;
-		height: 374px;
+		width: 400px;
+		height: 400px;
 		left: 675px;
 		top: 1277px;
 		overflow: visible;
@@ -119,10 +114,10 @@
 	}
 	#Rectangle {
 		position: absolute;
-		width: 374px;
-		height: 374px;
-		left: 1200px;
-		top: 1832px;
+		width: 400px;
+		height: 400px;
+		left: 1180px;
+		top: 1750px;
 		overflow: visible;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
@@ -131,10 +126,10 @@
 	}
 	#coreiii {
 		position: absolute;
-		width: 374px;
-		height: 374px;
-		left: 150px;
-		top: 1832px;
+		width: 400px;
+		height: 400px;
+		left: 170px;
+		top: 1750px;
 		overflow: visible;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
@@ -145,10 +140,10 @@
 	
 	#multig {
 		position: absolute;
-		width: 374px;
-		height: 374px;
+		width: 400px;
+		height: 400px;
 		left: 675px;
-		top: 1832px;
+		top: 1750px;
 		overflow: visible;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
@@ -159,9 +154,9 @@
 	#multiweb {
 		position: absolute;
 		overflow: visible;
-		width: 374px;
-		height: 374px;
-		left: 1200px;
+		width: 400px;
+		height: 400px;
+		left: 1180px;
 		top: 1277px;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
@@ -171,8 +166,8 @@
 
 	#陷落星河 {
 		position: absolute;
-		width: 374px;
-		height: 374px;
+		width: 400px;
+		height: 400px;
 		left: 675px;
 		top: 2942px;
 		overflow: visible;
@@ -184,9 +179,9 @@
 
 	#miyabrochure {
 		position: absolute;
-		width: 374px;
-		height: 374px;
-		left: 150px;
+		width: 400px;
+		height: 400px;
+		left: 170px;
 		top: 2942px;
 		overflow: hidden;
 		--web-animation: fadein undefineds undefined;
@@ -287,6 +282,16 @@
 	}
 	
 
+	.scroller {
+		height:1040px;
+		width:100vw;
+		overflow-y:scroll;
+		scroll-snap-type: y mandatory;
+	}
+
+	.scroller section {
+		scroll-snap-align: start;
+	}
 
 </style>
 <script id="applicationScript">
@@ -3198,36 +3203,46 @@ var Application = function() {
 }
 
 window.application = new Application();
+
+
+
 </script>
 </head>
 <body>
 <div id="Portfolio">
-	<img id="n_2" src="n_2.png" srcset="n_2.png 1x, n_2@2x.png 2x">
+<div class="scroller">
+	<section>
+		<img id="PORT_FO_LIO_FO_LIO" src="PORT_FO_LIO_FO_LIO.png" srcset="PORT_FO_LIO_FO_LIO.png 1x, PORT_FO_LIO_FO_LIO@2x.png 2x">
 		
-	<img id="PORT_FO_LIO_FO_LIO" src="PORT_FO_LIO_FO_LIO.png" srcset="PORT_FO_LIO_FO_LIO.png 1x, PORT_FO_LIO_FO_LIO@2x.png 2x">
-		
-	<div id="PORT_FO_LIO_FO_LIO_m">
-		<span>PORT</span><br/><span>FO</span><br/><span>LIO</span><br/><span>FO</span><br/><span>LIO</span>
-	</div>
+		<div id="PORT_FO_LIO_FO_LIO_m">
+			<span>PORT</span><br/><span>FO</span><br/><span>LIO</span><br/><span>FO</span><br/><span>LIO</span>
+		</div>
+	</section>	
 	
-
+	<section>
 	<a><img onclick="application.goToTargetView(event)" id="zine_mock_up3" src="zine_mock_up3.png" srcset="zine_mock_up3.png 1x, zine_mock_up3@2x.png 2x"></a>
 		
 	<a><img onclick="application.goToTargetView(event)" id="design_practice_collection_boo" src="design_practice_collection_boo.jpg" srcset="design_practice_collection_boo.png 1x, design_practice_collection_boo@2x.png 2x"></a>
-		
-	<a><img onclick="application.goToTargetView(event)" id="Rectangle" src="Rectangle.png" srcset="Rectangle.png 1x, Rectangle@2x.png 2x"></a>
-		
-	<a><img onclick="application.goToTargetView(event)" id="coreiii" src="core 3-exhibition brochure 2.jpg"></a>
-		
-	<a><img onclick="application.goToTargetView(event)" id="陷落星河" src="淘宝/手打效果图.jpg"></a>
 	
 	<a><img onclick="application.goToTargetView(event)" id="multiweb" src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_34.png"></a>
 
-	<a><img onclick="application.goToTargetView(event)" id="miyabrochure" src="miya/miya1.jpg"></a>
+	<a><img onclick="application.goToTargetView(event)" id="Rectangle" src="Rectangle.png" srcset="Rectangle.png 1x, Rectangle@2x.png 2x"></a>
+		
+	<a><img onclick="application.goToTargetView(event)" id="coreiii" src="core 3-exhibition brochure 2.jpg"></a>
 
 	<a><img onclick="application.goToTargetView(event)" id="multig" src="multi (anthony)/0.jpg"></a>
 
+	</section>
 
+	<section>
+		
+	<a><img onclick="application.goToTargetView(event)" id="陷落星河" src="淘宝/手打效果图.jpg"></a>
+
+	<a><img onclick="application.goToTargetView(event)" id="miyabrochure" src="miya/miya1.jpg"></a>
+
+	</section>
+	
+</div>
 
 
 
