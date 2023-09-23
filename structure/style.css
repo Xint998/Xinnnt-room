@@ -11,22 +11,25 @@
 body {
     margin:0;
     padding:0;
-    background: url(img/background.png) no-repeat fixed center ; 
-    background-size:1450px;
+    background: url(img/background.png) no-repeat fixed center; 
+    background-size:100vw;
+    
     background-color:rgb(249, 206, 212);
     cursor: url(img/meme/twitter-card.cur), default;
 }
 
 .bigbox {
-    
-    margin-top: 95px;
+    position:absolute;
+    margin-top: 9vh;
     margin-left: 180px;
+    top:9vh;
+    left:6vw;
     
 
 }
 .firstrow {
-    height:130px;
-    width:1150px;
+    height:10vh;
+    width:66vw;
     background-color: transparent;
     
     display:flex;
@@ -40,11 +43,10 @@ body {
 
 .secondrow {
 
-    height:130px;
-    width:1150px;
+    height:10vh;
+    width:66vw;
     background-color: transparent;
-    margin-top: 53px;
-    
+    margin-top: 12vh;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -56,10 +58,10 @@ body {
 
 .thirdrow {
 
-    height:130px;
-    width:1150px;
+    height:10vh;
+    width:66vw;
     background-color: transparent;
-    margin-top: 53px;
+    margin-top: 13vh;
     
     display:flex;
     flex-direction: row;
